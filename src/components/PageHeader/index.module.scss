@@ -1,0 +1,31 @@
+.header {
+    display: grid;
+    grid-template-columns: 94px 1fr;
+    grid-column-gap: 16px;
+    align-items: center;
+    margin: 24px 0;
+    user-select: none;
+}
+
+.back {
+    position: absolute;
+    left: 24px;
+}
+
+.icon {
+    width: 94px;
+    height: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--mantine-radius-md);
+    border: 1px solid var(--mantine-color-gray-1);
+}
+
+.info {
+
+}
+
+.text {
+    font-size: 14px !important;
+}

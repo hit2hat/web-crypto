@@ -1,0 +1,48 @@
+.playground {
+    margin-top: 12px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    border-radius: var(--mantine-radius-md);
+    border: 1px solid var(--mantine-color-gray-1);
+    width: 50%;
+}
+
+.blockTitle {
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.blockText {
+    margin-top: 5px;
+
+    textarea {
+        height: 150px !important;
+    }
+}
+
+.button {
+    width: 81px;
+    height: 81px;
+    border-radius: var(--mantine-radius-md);
+    background: var(--mantine-color-gray-1);
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: box-shadow 150ms ease, transform 100ms ease;
+    user-select: none;
+    font-size: 11px;
+
+    &:hover {
+        box-shadow: var(--mantine-shadows-md);
+        transform: scale(1.05);
+    }
+}

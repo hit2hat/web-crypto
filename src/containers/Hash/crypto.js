@@ -1,6 +1,6 @@
 class HashCrypto {
     /**
-     * Шифрование текста
+     * Вычисление хеша
      *
      * @param {string} text — текст
      * @return {Promise<string | null>}

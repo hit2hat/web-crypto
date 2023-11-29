@@ -2,7 +2,7 @@ export const JS_EXAMPLE = `class HashCrypto {
     algorithm = 'SHA-256';
 
     /**
-     * Шифрование текста
+     * Вычисление хеша
      *
      * @param {string} text — текст
      * @return {Promise<string | null>}

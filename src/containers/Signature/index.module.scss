@@ -1,0 +1,13 @@
+.blockTitle {
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.blockText {
+    margin-bottom: 12px;
+
+    textarea {
+        height: 70px !important;
+    }
+}

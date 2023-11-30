@@ -2,7 +2,6 @@ import * as Examples from './examples';
 import DiffieHellmanCrypto from './crypto';
 import { useState, useEffect } from 'react';
 import { useMantineTheme } from '@mantine/core';
-import { notifications } from '@mantine/notifications';
 import { CodeHighlight } from '@mantine/code-highlight';
 import { Container, Title, Text, Tabs } from '@mantine/core';
 import { IconCloudLock, IconBrandJavascript } from '@tabler/icons-react';
@@ -66,7 +65,7 @@ const DiffieHellman = () => {
         if (keys === null) {
             load();
         }
-    }, []);
+    }, [ keys ]);
 
     useEffect(() => {
         const derive = async (publicKey, privateKey) => {

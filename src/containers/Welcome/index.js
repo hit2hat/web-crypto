@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Container, Title, Group, SimpleGrid, Text } from '@mantine/core';
 import styles from './index.module.scss';
 
-import { IconKey, IconPassword, IconCloudLock } from '@tabler/icons-react';
+import { IconKey, IconPassword, IconCloudLock, IconCertificate } from '@tabler/icons-react';
 
 const Welcome = () => {
     const theme = useMantineTheme();
@@ -44,6 +44,12 @@ const Welcome = () => {
                         <IconCloudLock color={theme.colors['blue'][6]} size="2rem" />
                         <Text size="sm" mt={7}>
                             Обмен ключами
+                        </Text>
+                    </Link>
+                    <Link to="/signature" className={styles.item}>
+                        <IconCertificate color={theme.colors['violet'][6]} size="2rem" />
+                        <Text size="sm" mt={7}>
+                            Цифровая подпись
                         </Text>
                     </Link>
                 </SimpleGrid>

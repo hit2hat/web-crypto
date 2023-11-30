@@ -8,6 +8,7 @@ import Symmetric from '../Symmetric';
 import Asymmetric from '../Asymmetric';
 import Hash from '../Hash';
 import DiffieHellman from '../DiffieHellman';
+import Signature from '../Signature';
 
 const theme = createTheme({
 
@@ -24,6 +25,7 @@ const App = () => {
                     <Route path="asymmetric" element={<Asymmetric />} />
                     <Route path="hash" element={<Hash />} />
                     <Route path="key-sharing" element={<DiffieHellman />} />
+                    <Route path="signature" element={<Signature />} />
                 </Routes>
             </BrowserRouter>
         </MantineProvider>

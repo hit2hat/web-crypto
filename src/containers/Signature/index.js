@@ -24,7 +24,7 @@ const KEYS = [
 const Signature = () => {
     const theme = useMantineTheme();
     const [ keys, setKeys ] = useState(null);
-    const [ text, setText ] = useState('abc');
+    const [ text, setText ] = useState('Ваш несекретный текст');
     const [ activePublicKey, setActivePublicKey ] = useState(null);
     const [ activePrivateKey, setActivePrivateKey ] = useState(null);
     const [ isValid, setIsValid ] = useState(false);
